@@ -2,13 +2,13 @@
 
 Selalu cek `Log Aktifitas` pada aplikasi CMS, beberapa data yang bisa dicek dan diperhatikan seperti :
 
-- `Data Aktifitas Pengguna`
-- `IP Login Pengguna`
-- `Request dan Response Uper Hold dari Kustomer (Agent / PBM)`
-- `Request dan Response Update Hold dari Kustomer (Agent / PBM)`
-- `Request dan Response Payment dari Kustomer (Agent / PBM)`
-- `Error Query`
-- `DLL`
+- `Data Aktifitas Pengguna`.
+- `IP Login Pengguna`.
+- `Request dan Response Uper Hold dari Kustomer (Agent / PBM)`.
+- `Request dan Response Update Hold dari Kustomer (Agent / PBM)`.
+- `Request dan Response Payment dari Kustomer (Agent / PBM)`.
+- `Error Query`.
+- `DLL`.
 
 ## Lokasi Lok Aktifitas
 

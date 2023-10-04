@@ -1,4 +1,5 @@
 - [Log Aktifitas](log-aktifitas.md)
 - [Log Email](log-email.md)
-- [Integrasi Inaportnet](integrasi-inaportnet.md)
-- [Pengiriman Data Payment ke WSBP](pengiriman-data-payment-wsbp.md)
+- [Data Hold ke WSBP](data-hold-wsbp.md)
+- [Data Payment ke WSBP](data-payment-wsbp.md)
+- [Cron Job](cronjob.md)

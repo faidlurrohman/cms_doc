@@ -2,10 +2,10 @@
 
 Selalu cek `Log Email` pada aplikasi CMS, beberapa data yang bisa dicek dan diperhatikan seperti :
 
-- `SMPT Email`
-- `Request dan Response WSBP (Uper Hold / Update Hold / Payment)`
-- `Request dan Response BNI WEBDAV (Uper Hold / Update Hold / Payment)`
-- `DLL`
+- `SMPT Email`.
+- `Request dan Response WSBP (Uper Hold / Update Hold / Payment)`.
+- `Request dan Response BNI WEBDAV (Uper Hold / Update Hold / Payment)`.
+- `DLL`.
 
 ## Lokasi Log Email
 
