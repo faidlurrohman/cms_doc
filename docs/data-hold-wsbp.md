@@ -16,7 +16,7 @@ Dari contoh data alur proses diatas yang perlu diperhatikan :
 - `Rencana Penambatan Kapal dan Rencana Operasi (RPKRO)` harus berwarna `Hijau`.
 - `Rencana Kegiatan Bongkar Muat (RKBM)` harus berwarna `Hijau`.
 
-Jika salah satu diatas masih bewarna `Putih` atau `Kuning` artinya data `Hold` (Agent / PBM) pada `CMS` masih belum terintegrasi dengan `Inaportnet`, maka lakukan proses pengiriman data secara [Manual](data-hold-wsbp.md#pengiriman-data-hold-manual).
+Jika salah satu diatas masih bewarna `Putih` atau `Kuning` artinya data `Hold` (Agent / PBM) pada `CMS` masih belum terintegrasi dengan `Inaportnet`, maka lakukan proses pengiriman data secara [Manual](data-hold-wsbp.md#pengiriman-data-manual).
 
 ## Pengiriman Data (Otomatis)
 
