@@ -1,6 +1,6 @@
 # Log Aktifitas
 
-Selalu cek `Log Aktifitas` pada aplikasi CMS, beberapa data yang bisa dicek dan diperhatikan seperti :
+Lakukan cek `Log Aktifitas` pada aplikasi CMS, beberapa data yang bisa dicek dan diperhatikan seperti :
 
 - `Data Aktifitas Pengguna`.
 - `IP Login Pengguna`.
@@ -9,8 +9,6 @@ Selalu cek `Log Aktifitas` pada aplikasi CMS, beberapa data yang bisa dicek dan 
 - `Request dan Response Payment dari Kustomer (Agent / PBM)`.
 - `Error Query`.
 - `DLL`.
-
-## Lokasi Lok Aktifitas
 
 Untuk melihat `Log Aktifitas` bisa menggunakan FTP/SFTP/SSH dsb. Jika sudah berhasil terhubung ke VPS Server, bisa dilanjutkan dengan command bash dibawah ini :
 
