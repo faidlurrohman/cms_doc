@@ -1,4 +1,4 @@
-![logo](_media/icon.svg)
+![logo](_media/hamburger.png ":size=100x100")
 
 # Cash Management System <small>CMS</small>
 
