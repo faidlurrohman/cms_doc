@@ -1,6 +1,6 @@
 # Data Hold ke WSBP Server
 
-Sering lakukan cek data `Hold` Agent / PBM pada [Log Email](log-email.md), pastikan data `Hold` sudah berhasil dikirim oleh `CMS` sekaligus berhasil diproses oleh `WSBP Server`, karena jika tidak melakukan pengecekan akan mengakibatkan `Rencana Penambatan Kapal dan Rencana Operasi (RPKRO)` atau `Rencana Kegiatan Bongkar Muat (RKBM)` terhadap pihak Agent / PBM terganggu.
+Lakukan cek data `Hold` Agent / PBM pada [Log Email](log-email.md), pastikan data `Hold` sudah berhasil dikirim oleh `CMS` sekaligus berhasil diproses oleh `WSBP Server`, karena jika tidak melakukan pengecekan akan mengakibatkan `Rencana Penambatan Kapal dan Rencana Operasi (RPKRO)` atau `Rencana Kegiatan Bongkar Muat (RKBM)` terhadap pihak Agent / PBM terganggu.
 
 ## Integrasi Inaportnet
 
