@@ -10,5 +10,17 @@ Lakukan cek `Log Email` pada aplikasi CMS, beberapa data yang bisa dicek dan dip
 Untuk melihat `Log Email` bisa menggunakan FTP/SFTP/SSH dsb. Jika sudah berhasil terhubung ke VPS Server, bisa dilanjutkan dengan command bash dibawah ini :
 
 ```bash
-cat /var/mail/log
+cd /var/mail
+```
+
+```bash
+cat /var/mail/root
+```
+
+```bash
+cat /var/mail/root.0
+```
+
+```bash
+cat /var/mail/root.1
 ```
