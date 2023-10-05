@@ -57,7 +57,7 @@ Perhatikan field `id`, kemudian `Salin` atau `Catat` bebarapa `id` tersebut jika
 
 ### Step 4
 
-Ganti format SQL Query `#IDS#` dibawah ini dengan data field `id` yang sudah disalin sebelumnya, jika lebih dari satu maka pisahkan dengan tanda `, (Koma)` contoh `11251,11252`, setelah format sudah diubah kemudian Execute SQL Query.
+Ganti format SQL Query `#IDS#` dibawah ini dengan data field `id` yang sudah disalin sebelumnya, jika lebih dari satu maka pisahkan dengan tanda `Koma (,)` contoh `11251,11252`, setelah format sudah diubah kemudian Execute SQL Query.
 
 ```SQL
 UPDATE transaction_uper_detail
@@ -67,7 +67,7 @@ WHERE id IN (#IDS#)
 
 ### Step 5
 
-Setelah berhasil melakukan Execute SQL Query [Step 4](data-payment-wsbp.md#step-1), maka data yang sudah di-update sebelumnya akan diproses secara [Otomatis](data-payment-wsbp.md#pengiriman-data-otomatis) oleh `CMS`, untuk memastikan data sudah ter-update bisa dilakukan dengan Execute Query [Step 1](data-payment-wsbp.md#step-1), seharusnya hasil dari Query tersebut tidak ada.
+Setelah berhasil melakukan Execute SQL Query [Step 4](data-payment-wsbp.md#step-1), maka data yang sudah di-update sebelumnya akan diproses secara [Otomatis](data-payment-wsbp.md#pengiriman-data-otomatis) oleh `CMS`, untuk memastikan data sudah ter-update bisa dilakukan dengan Execute Query [Step 1](data-payment-wsbp.md#step-1), seharusnya hasil dari Execute SQL Query tersebut tidak ada list data.
 
 ### Step 6
 
