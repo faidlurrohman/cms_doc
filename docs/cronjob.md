@@ -8,7 +8,7 @@ Cron Job berjalan berdasarkan waktu interval yang di tentukan di pengaturan cron
 crontab -l
 ```
 
-- Untuk merubah Cron Job
+- Untuk mengedit Cron Job
 
 ```bash
 crontab -e

@@ -6,7 +6,7 @@ Biasanya `Admin` terlewat atau miss untuk memasukkan `Voyage No` pada saat regis
 
 ## Step 1
 
-Minta kepada admin `No. PUK` dan `Voyage No` yang akan ditambahkan, jika sudah mendapatkan `No. PUK` dan `Voyage No` maka bisa dilanjutkan untuk merubah format SQL Query dibawah, rubah data `#NO_PUK#` dengan `No. PUK` yang sudah didapatkan dari admin.
+Minta kepada admin `No. PUK` dan `Voyage No` yang akan ditambahkan, jika sudah mendapatkan `No. PUK` dan `Voyage No` maka bisa dilanjutkan untuk mengubah format SQL Query dibawah, ubah data `#NO_PUK#` dengan `No. PUK` yang sudah didapatkan dari admin.
 
 ```SQL
 SELECT * FROM berthing
@@ -16,7 +16,7 @@ ORDER BY id DESC
 
 ## Step 2
 
-Setelah Execute SQL Query [Step 1](voyage-no.md#step-1), cari data yang akan ditambahkan. Jika sudah, salin field `id` kemudian ubah format SQL Query dibawah, rubah data `#ID#` dengan `id` yang sudah disalin sebelumnya dan rubah data `#VOYAGE_NO#` dengan data `Voyage No` yang sudah didapat dari `admin`.
+Setelah Execute SQL Query [Step 1](voyage-no.md#step-1), cari data yang akan ditambahkan. Jika sudah, salin field `id` kemudian ubah format SQL Query dibawah, ubah data `#ID#` dengan `id` yang sudah disalin sebelumnya dan ubah data `#VOYAGE_NO#` dengan data `Voyage No` yang sudah didapat dari `admin`.
 
 ```SQL
 INSERT INTO berthing_voyage (berthing_id, voyane_no)

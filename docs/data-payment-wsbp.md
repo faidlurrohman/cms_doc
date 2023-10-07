@@ -19,7 +19,7 @@ Perlu diketahui bahwa Pengiriman Data `Payment` ke `WSBP Server` pada `CMS` adal
 
 ## Pengiriman Data (Manual)
 
-Untuk melakukan pengiriman data `Payment` (Agent / PBM) ke `WSBP Server` secara manual bisa dilakukan hanya saat ada gangguan koneksi jaringan antara `CMS` dengan `WSBP Server`, step-step untuk melakukan data `Payment` secara manual ada dibawah ini `(Perhatikan Step-Step dengan Teliti)` :
+Untuk melakukan pengiriman data `Payment` (Agent / PBM) ke `WSBP Server` secara manual bisa dilakukan hanya saat ada gangguan koneksi jaringan antara `CMS` dengan `WSBP Server`, step-step untuk melakukan data `Payment` secara manual ada dibawah ini :
 
 ### Step 1
 
