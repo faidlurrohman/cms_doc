@@ -4,3 +4,4 @@
 - [Data Payment ke WSBP](data-payment-wsbp.md)
 - [Cron Job](cronjob.md)
 - [Voyage No](voyage-no.md)
+- [Hold Bank BNI](hold-bank-bni.md)
