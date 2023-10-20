@@ -10,7 +10,7 @@ Lakukan cek `Log Aktifitas` pada aplikasi CMS, beberapa data yang bisa dicek dan
 - `Error Query`.
 - `DLL`.
 
-Untuk melihat `Log Aktifitas` bisa menggunakan FTP/SFTP/SSH dsb. Jika sudah berhasil terhubung ke VPS Server, bisa dilanjutkan dengan command bash dibawah ini :
+Untuk melihat `Log Aktifitas` bisa menggunakan FTP/SFTP/SSH dsb. Jika sudah berhasil terhubung ke VPS Server, bisa dilanjutkan dengan perintah dibawah ini :
 
 ```bash
 cd /var/log/apache2

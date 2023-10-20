@@ -7,7 +7,7 @@ Lakukan cek `Log Email` pada aplikasi CMS, beberapa data yang bisa dicek dan dip
 - `Request dan Response BNI WEBDAV (Uper Hold / Update Hold / Payment)`.
 - `DLL`.
 
-Untuk melihat `Log Email` bisa menggunakan FTP/SFTP/SSH dsb. Jika sudah berhasil terhubung ke VPS Server, bisa dilanjutkan dengan command bash dibawah ini :
+Untuk melihat `Log Email` bisa menggunakan FTP/SFTP/SSH dsb. Jika sudah berhasil terhubung ke VPS Server, bisa dilanjutkan dengan perintah dibawah ini :
 
 ```bash
 cd /var/mail

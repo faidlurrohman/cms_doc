@@ -1,6 +1,6 @@
 # Cron Job
 
-Cron Job berjalan berdasarkan waktu interval yang di tentukan di pengaturan crontab `Linux`, bisa disesuaikan atau diatur sesuai kebutuhan. Untuk melihat comfigurasi Cron Job yang berjalan pada `CMS Server` bisa menggunakan beberapa command bash dibawah ini :
+Cron Job berjalan berdasarkan waktu interval yang di tentukan di pengaturan crontab `Linux`, bisa disesuaikan atau diatur sesuai kebutuhan. Untuk melihat comfigurasi Cron Job yang berjalan pada `CMS Server` bisa menggunakan beberapa perintah dibawah ini :
 
 - Untuk melihat Cron Job
 
@@ -14,7 +14,7 @@ crontab -l
 crontab -e
 ```
 
-Untuk melihat Cron Job File yang berjalan pada `CMS Server` bisa menggunakan FTP/SFTP/SSH dsb. Jika sudah berhasil terhubung ke VPS Server, bisa dilanjutkan dengan command bash dibawah ini :
+Untuk melihat Cron Job File yang berjalan pada `CMS Server` bisa menggunakan FTP/SFTP/SSH dsb. Jika sudah berhasil terhubung ke VPS Server, bisa dilanjutkan dengan perintah dibawah ini :
 
 ```bash
 cd /var/www/cms.scnport.com/public_html/cron
