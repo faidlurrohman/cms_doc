@@ -16,7 +16,7 @@ Hubungi `Team MTO` untuk menginformasikan ke Agent / PBM bahwa proses `Hold` dan
 
 ### Step 2
 
-`Pastikan` bahwa Agent / PBM sudah melakukan Top Up dana terlebih dahulu, jika sudah dipastikan maka bisa dilanjutkan ke [Step 3](hold-bank-bni.md#step-3).
+`Pastikan` bahwa Agent / PBM sudah melakukan Top Up dana terlebih dahulu, jika sudah dipastikan maka bisa dilanjutkan ke [Step 3](hold-bni.md#step-3).
 
 ### Step 3
 
@@ -44,7 +44,7 @@ cd /home/[user]
 
 ### Step 5
 
-Setelah [Step 4](hold-bank-bni.md#step-4) berhasil, selanjutnya adalah merubah nama file yang sebelumnya sudah tersalin.
+Setelah [Step 4](hold-bni.md#step-4) berhasil, selanjutnya adalah merubah nama file yang sebelumnya sudah tersalin.
 
 Untuk standar format penamaan file adalah sebagai berikut :
 
@@ -53,14 +53,14 @@ Untuk standar format penamaan file adalah sebagai berikut :
 Untuk merubah nama format file sebelumnya bisa menggunakan perintah di bawah ini :
 
 ```bash
-mv 230013541111.txt 20231020144960_RequestHold.txt
+mv 230013541111.txt YYYYMMDDhhmmss_RequestHold.txt
 ```
 
-`Catatan` : sesuaikan standar format penamaan dengan waktu sekarang
+!> sesuaikan standar format penamaan dengan waktu sekarang, pada contoh kasus ini adalah `20231020144960_RequestHold.txt`
 
 ### Step 6
 
-`Enkripsi` file yang sebelumnya kita ubah nama dengan menggunakan comman dibawah ini :
+`Enkripsi` file yang sebelumnya sudah di ubah nama dengan menggunakan perintah dibawah ini :
 
 ```bash
 gpg -o [target].txt --encrypt --recipient paruhum.aritonang@bni.co.id [result].gpg
@@ -80,23 +80,23 @@ cp [target].gpg /var/www/cms.scnport.com/public_html/bni/block/outgoing
 
 ### Step 8
 
-Setelah [Step 7](hold-bank-bni.md#step-7) sudah berhasil, kurang dari 15 menit maka file request akan diambil dan dihapus oleh `Host Bank BNI`.
-Jika lebih dari 15 Menit file request tersebut masih ada maka bisa dipastikan ada masalah pengambilan file request, bisa dilihat pada [File Request Masih Ada di Outgoing](hold-bank-bni.md#file-request-masih-ada-di-outgoing)
+Setelah [Step 7](hold-bni.md#step-7) sudah berhasil, kurang dari 15 menit maka file request akan diambil dan dihapus oleh `Host Bank BNI`.
+Jika lebih dari 15 Menit file request tersebut masih ada maka bisa dipastikan ada masalah pengambilan file request, bisa dilihat pada [File Request Masih Ada di Outgoing](hold-bni.md#file-request-masih-ada-di-outgoing)
 
 ### Step 9
 
-Jika setelah 15 Menit dan file request yang di direktori `Outgoing` sudah tidak ada, maka berarti `Host Bank BNI` sudah mengambil dan menghapus file request tersebut. Kemudian kita menunggu maksimal 15 menit, `Host Bank BNI` akan mengirimkan file balikan ke direktori `incoming` atau `/var/www/cms.scnport.com/public_html/bni/block/incoming`.
+Jika setelah 15 Menit dan file request yang di direktori `Outgoing` sudah tidak ada, maka berarti `Host Bank BNI` sudah mengambil dan menghapus file request tersebut. Kemudian menunggu maksimal 15 menit, `Host Bank BNI` akan mengirimkan file balikan ke direktori `incoming` atau `/var/www/cms.scnport.com/public_html/bni/block/incoming`.
 
 ### Step 10
 
 Secara paralel sambil menunggu file balikan bisa dilakukan pengecekan apakah ada notifikasi E-mail dari `Bank BNI`.
 Setelah 15 menit menunggu file balikan dari `Host Bank BNI`, ada beberapa kasus yang bisa terjadi antara lain :
 
-- Di direktori `incoming` masih belum ada balikan yang dikirim oleh `Host Bank BNI`, selanjutnya bisa dilihat [File Balikan Tidak Ada Di Incoming](hold-bank-bni.md#file-balikan-tidak-ada-di-incoming).
+- Di direktori `incoming` masih belum ada balikan yang dikirim oleh `Host Bank BNI`, selanjutnya bisa dilihat [File Balikan Tidak Ada Di Incoming](hold-bni.md#file-balikan-tidak-ada-di-incoming).
 
-- Di direktori sudah ada file balikan akan tetapi `Sistem CMS` tidak bisa membaca file balikan tersebut dikarenakan format tidak sesuai standar, sedangkan sudah ada E-mail notifikasi dari host `BNI` yang meninformasikan bahwa proses `Hold` Agent / PBM sukses. Pada kasus ini maka harus dilakukan update secara manual, bisa dilihat [Update Status Hold (Manual)](hold-bank-bni.md#update-status-hold-manual).
+- Di direktori sudah ada file balikan akan tetapi `Sistem CMS` tidak bisa membaca file balikan tersebut dikarenakan format tidak sesuai standar, sedangkan sudah ada E-mail notifikasi dari host `BNI` yang meninformasikan bahwa proses `Hold` Agent / PBM sukses. Pada kasus ini maka harus dilakukan update secara manual, bisa dilihat [Update Status Hold (Manual)](hold-bni.md#update-status-hold-manual).
 
-- Di direktori sudah ada file balikan oleh `Host Bank BNI` dan `Sistem CMS` bisa membaca format file balikan, jika balikan tersebut meninformasikan bahwa `Hold` dana sukses maka `Sistem CMS` akan secara otomatis mengupdate data `(tabel uper_detail dan lain-lainnya)`, kemudian pada tampilan `Berthing List` perhatikan field `Bank Status` akan berubah menjadi `Hold` dan field `Status` akan berubah mnejadi `Uper Hold`.
+- Di direktori sudah ada file balikan oleh `Host Bank BNI` dan `Sistem CMS` bisa membaca format file balikan, jika balikan tersebut meninformasikan bahwa `Hold` dana sukses maka `Sistem CMS` akan secara otomatis mengupdate data `(tabel uper_detail dan lain-lainnya)`, kemudian pada tampilan `Berthing List` perhatikan field `Bank Status` akan berubah menjadi `Hold` dan field `Status` akan berubah menjadi `Uper Hold`.
 
 ### Step 11
 
@@ -151,11 +151,11 @@ Setelah host `BNI` berhasil mengambil dan menghapus file request di direktori `o
 
 Lakukan cek notifikasi E-mail dari host `BNI` sebagai berikut :
 
-- Jika E-mail host `BNI` seperti gambar dibawah ini maka bisa dipastikan bahwa proses `Hold` Agent / PBM gagal karena dana tidak mencukupi, bisa dilihat [Dana Tidak Mencukupi](hold-bank-bni.md#dana-tidak-mencukupi).
+- Jika E-mail host `BNI` seperti gambar dibawah ini maka bisa dipastikan bahwa proses `Hold` Agent / PBM gagal karena dana tidak mencukupi, bisa dilihat [Dana Tidak Mencukupi](hold-bni.md#dana-tidak-mencukupi).
 
 ![Insufficient Hold](_media/insufficient-hold.png)
 
-- Jika E-mail host `BNI` seperti gambar dibawah ini maka bisa dipastikan bahwa proses `Hold` Agent / PBM berhasil, akan tetapi `Sistem CMS` tidak bisa merubah status secara otomatis dikarenakan tidak adanya file balikan dati host `BNI`, untuk itu harus dilakukan update data secara manual, bisa dilihat [Update Status Hold (Manual)](hold-bank-bni.md#update-status-hold-manual).
+- Jika E-mail host `BNI` seperti gambar dibawah ini maka bisa dipastikan bahwa proses `Hold` Agent / PBM berhasil, akan tetapi `Sistem CMS` tidak bisa merubah status secara otomatis dikarenakan tidak adanya file balikan dati host `BNI`, untuk itu harus dilakukan update data secara manual, bisa dilihat [Update Status Hold (Manual)](hold-bni.md#update-status-hold-manual).
 
 ![Success Hold](_media/success-hold.png)
 
@@ -191,7 +191,7 @@ UPDATE uper_detail
 WHERE code = '230013541111'
 ```
 
-Jika SQL Query diatas sukses dijalankan maka pada tampilan `Berthing List` perhatikan field `Bank Status` akan berubah menjadi `Hold` dan field `Status` akan berubah mnejadi `Uper Hold`.
+Jika SQL Query diatas sukses dijalankan maka pada tampilan `Berthing List` perhatikan field `Bank Status` akan berubah menjadi `Hold` dan field `Status` akan berubah menjadi `Uper Hold`.
 
 ### Step 2
 
