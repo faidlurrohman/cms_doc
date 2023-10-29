@@ -60,7 +60,7 @@ WHERE code = '230016238301'
 
 Jika SQL Query diatas sukses dijalankan maka pada tampilan [Payment List](https://cms.scnport.com/payment.html) jika ditekan tombol `Show/Hide UPER Detil` pada list transaksi terkait akan terlihat data detail Agent / PBM, kemudian perhatikan pada kolom `Status` yang sebelumnya adalah `Waiting Payment` akan berubah menjadi `Paid`.
 
-### Step 4
+#### Step 4
 
 Selesai.
 
@@ -70,7 +70,7 @@ Selesai.
 
 Hubungi `Team Port` untuk meminta data screenshot Mutasi Rekening dari transaksi terkait ke pihak Agent / PBM.
 
-### Step 2
+#### Step 2
 
 Jika `Team Port` sudah mendapatkan screenshot Mutasi Rekening dari Agent / PBM, maka perlu diperhatikan beberapa data detailnya sebagai berikut :
 
@@ -107,7 +107,7 @@ WHERE code = '230015442312'
 
 Jika SQL Query diatas sukses dijalankan maka pada tampilan [Payment List](https://cms.scnport.com/payment.html) jika ditekan tombol `Show/Hide UPER Detil` pada list transaksi terkait akan terlihat data detail Agent / PBM, kemudian perhatikan pada kolom `Status` yang sebelumnya adalah `Waiting Payment` akan berubah menjadi `Paid`.
 
-### Step 4
+#### Step 4
 
 Selesai.
 
