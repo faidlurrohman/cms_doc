@@ -18,7 +18,7 @@ ORDER BY id DESC
 
 ## Step 2
 
-Setelah Execute SQL Query [Step 1](voyage-no.md#step-1), cari data yang akan ditambahkan. Jika sudah, salin field `id` kemudian ubah format SQL Query dibawah ini:
+Setelah Execute SQL Query [Step 1](voyage-no.md#step-1), cari data yang akan ditambahkan. Jika sudah, salin kolom `id` kemudian ubah format SQL Query dibawah ini:
 
 ```SQL
 INSERT INTO berthing_voyage (berthing_id, voyane_no)

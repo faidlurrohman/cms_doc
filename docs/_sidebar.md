@@ -6,3 +6,4 @@
 - [Voyage No](voyage-no.md)
 - [Hold Bank BNI](hold-bni.md)
 - [Update Hold Bank BNI](update-hold-bni.md)
+- [Payment Bank BNI](payment-bni.md)

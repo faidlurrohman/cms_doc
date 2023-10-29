@@ -53,11 +53,11 @@ Cek hasil Execute SQL Query [Step 1](data-payment-wsbp.md#step-1), jika menghasi
 
 ### Step 3
 
-Perhatikan field `id`, kemudian `Salin` atau `Catat` bebarapa `id` tersebut jika lebih dari 1.
+Perhatikan kolom `id`, kemudian `Salin` atau `Catat` bebarapa `id` tersebut jika lebih dari 1.
 
 ### Step 4
 
-Ganti format SQL Query `#IDS#` dibawah ini dengan data field `id` yang sudah disalin sebelumnya, jika lebih dari satu maka pisahkan dengan tanda `Koma (,)` contoh `11251,11252`, setelah format sudah diubah kemudian Execute SQL Query.
+Ganti format SQL Query `#IDS#` dibawah ini dengan data kolom `id` yang sudah disalin sebelumnya, jika lebih dari satu maka pisahkan dengan tanda `Koma (,)` contoh `11251,11252`, setelah format sudah diubah kemudian Execute SQL Query.
 
 ```SQL
 UPDATE transaction_uper_detail

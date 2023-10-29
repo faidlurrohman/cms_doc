@@ -4,9 +4,9 @@ Pada saat verifikator ke 2 (Port Manager / Satker) melakukan verifikasi maka Sis
 
 ## Dana Tidak Mencukupi
 
-Pada Menu `Berthing List` perhatikan dibagian Field `Bank Status` = `Waiting` dan `Status` = `Verified`, kemudian adanya notifikasi E-mail dari `Bank BNI` statusnya `Insufficinet Fund` seperti dibawah ini :
+Pada Menu `Berthing List` perhatikan dibagian kolom `Bank Status` = `Waiting` dan `Status` = `Verified`, kemudian adanya notifikasi E-mail dari `Bank BNI` statusnya `Insufficinet Fund` seperti dibawah ini :
 
-![Insufficient Hold](_media/insufficient-hold.png)
+![Insufficient Hold](_media/insufficient-hold.png ":size=600")
 
 Dari notifikasi E-mail diatas menunjukkan bahwa proses `Update Hold` Agent / PBM mengalami kegagalan dikarenakan dana yang tidak mencukupi. Pada kasus ini harus dibuat file request `Update Hold` secara manual dan ada beberapa step-step yang harus dilakukan antara lain :
 
@@ -97,7 +97,7 @@ Setelah 15 menit menunggu file balikan dari `Host Bank BNI`, ada beberapa kasus 
 
 - Di direktori sudah ada file balikan akan tetapi `Sistem CMS` tidak bisa membaca file balikan tersebut dikarenakan format tidak sesuai standar, sedangkan sudah ada E-mail notifikasi dari host `BNI` yang meninformasikan bahwa proses `Update Hold` Agent / PBM sukses. Pada kasus ini maka harus dilakukan update secara manual, bisa dilihat [Update Status Hold (Manual)](hold-bni.md#update-status-hold-manual).
 
-- Di direktori sudah ada file balikan oleh `Host Bank BNI` dan `Sistem CMS` bisa membaca format file balikan, jika balikan tersebut meninformasikan bahwa `Update Hold` dana sukses maka `Sistem CMS` akan secara otomatis mengupdate data `(tabel uper_detail dan lain-lainnya)`, kemudian pada tampilan `Berthing List` perhatikan field `Bank Status` akan berubah menjadi `Update Hold` dan field `Status` akan berubah menjadi `Uper Hold`.
+- Di direktori sudah ada file balikan oleh `Host Bank BNI` dan `Sistem CMS` bisa membaca format file balikan, jika balikan tersebut meninformasikan bahwa `Update Hold` dana sukses maka `Sistem CMS` akan secara otomatis mengupdate data `(tabel uper_detail dan lain-lainnya)`, kemudian pada tampilan `Berthing List` perhatikan kolom `Bank Status` akan berubah menjadi `Update Hold` dan kolom `Status` akan berubah menjadi `Uper Hold`.
 
 ### Step 10
 
@@ -154,8 +154,8 @@ Lakukan cek notifikasi E-mail dari host `BNI` sebagai berikut :
 
 - Jika E-mail host `BNI` seperti gambar dibawah ini maka bisa dipastikan bahwa proses `Update Hold` Agent / PBM gagal karena dana tidak mencukupi, bisa dilihat [Dana Tidak Mencukupi](update-hold-bni.md#dana-tidak-mencukupi).
 
-![Insufficient Hold](_media/insufficient-hold.png)
+![Insufficient Hold](_media/insufficient-hold.png ":size=600")
 
 - Jika E-mail host `BNI` seperti gambar dibawah ini maka bisa dipastikan bahwa proses `Udpate Hold` Agent / PBM berhasil, akan tetapi `Sistem CMS` tidak bisa merubah status secara otomatis dikarenakan tidak adanya file balikan dati host `BNI`, untuk itu harus dilakukan update data secara manual, bisa dilihat [Update Status Hold (Manual)](hold-bni.md#update-status-hold-manual).
 
-![Success Hold](_media/success-hold.png)
+![Success Hold](_media/success-hold.png ":size=600")
